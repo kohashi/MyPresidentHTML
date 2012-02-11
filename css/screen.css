@@ -68,18 +68,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 5, ../sass/partials/_base.scss */
-body {
-  width: 480px;
-  -webkit-text-size-adjust: none;
+/* line 4, ../sass/partials/_base.scss */
+html {
   background-color: #94144f;
-  color: #fcabd2;
+}
+
+/* line 9, ../sass/partials/_base.scss */
+body {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5428d), color-stop(100%, #94144f));
+  background: -webkit-linear-gradient(#e5428d, #94144f);
+  background: -moz-linear-gradient(#e5428d, #94144f);
+  background: -o-linear-gradient(#e5428d, #94144f);
+  background: -ms-linear-gradient(#e5428d, #94144f);
+  background: linear-gradient(#e5428d, #94144f);
+  -webkit-text-size-adjust: none;
+  color: #ffc4de;
   line-height: 1.6em;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Mayryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 13px;
 }
 
-/* line 19, ../sass/partials/_base.scss */
+/* line 22, ../sass/partials/_base.scss */
 a {
   color: white;
 }
@@ -100,21 +109,21 @@ a:active {
   color: white;
 }
 
-/* line 27, ../sass/partials/_base.scss */
+/* line 30, ../sass/partials/_base.scss */
 h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   display: none;
 }
 
-/* line 33, ../sass/partials/_base.scss */
+/* line 36, ../sass/partials/_base.scss */
 .nbr {
   white-space: nowrap;
 }
 
-/* line 3, ../sass/partials/_follower.scss */
+/* line 7, ../sass/partials/_follower.scss */
 .followers {
   text-align: center;
 }
-/* line 6, ../sass/partials/_follower.scss */
+/* line 10, ../sass/partials/_follower.scss */
 .followers li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -126,7 +135,7 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
 .followers li {
   *display: inline;
 }
-/* line 9, ../sass/partials/_follower.scss */
+/* line 13, ../sass/partials/_follower.scss */
 .followers li.blank {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -134,13 +143,12 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  padding: 2px;
-  width: 100px;
-  height: 130px;
+  width: 92px;
+  height: 123px;
   border: 1px solid white;
 }
 
-/* line 19, ../sass/partials/_follower.scss */
+/* line 22, ../sass/partials/_follower.scss */
 .follower {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -148,89 +156,102 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  background: white;
+  padding: 6px 0 12px;
+  width: 94px;
+  height: 107px;
+  background-color: white;
   color: black;
-  padding: 2px;
-  width: 100px;
-  height: 130px;
-  border: 1px solid white;
-  font-size: 10px;
   line-height: 1.1;
 }
-/* line 30, ../sass/partials/_follower.scss */
+/* line 31, ../sass/partials/_follower.scss */
 .follower .icon {
   display: block;
   margin: 0 auto;
 }
-/* line 35, ../sass/partials/_follower.scss */
-.follower .name {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-}
-/* line 7, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.follower .name {
-  *display: inline;
-}
-/* line 39, ../sass/partials/_follower.scss */
-.follower table {
-  table-layout: fixed;
-  width: 100%;
-  margin-top: 3px;
-}
-/* line 44, ../sass/partials/_follower.scss */
-.follower table th, .follower table td {
-  padding: 1px 0;
-}
-/* line 48, ../sass/partials/_follower.scss */
-.follower table th {
-  width: 40px;
+/* line 36, ../sass/partials/_follower.scss */
+.follower h1 {
+  max-width: 94px;
+  margin-top: 10px;
+  font-size: 14px;
+  overflow: hidden;
 }
 
 /* line 3, ../sass/partials/_layout.scss */
 #main {
   padding: 10px;
 }
+/* line 6, ../sass/partials/_layout.scss */
+#main section {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5428d), color-stop(100%, #aa175b));
+  background: -webkit-linear-gradient(#e5428d, #aa175b);
+  background: -moz-linear-gradient(#e5428d, #aa175b);
+  background: -o-linear-gradient(#e5428d, #aa175b);
+  background: -ms-linear-gradient(#e5428d, #aa175b);
+  background: linear-gradient(#e5428d, #aa175b);
+  -moz-box-shadow: 1px 1px 6px #510b2b;
+  -webkit-box-shadow: 1px 1px 6px #510b2b;
+  -o-box-shadow: 1px 1px 6px #510b2b;
+  box-shadow: 1px 1px 6px #510b2b;
+  margin-bottom: 8px;
+  border: 1px solid #ce3d7f;
+}
+/* line 14, ../sass/partials/_layout.scss */
+#main section > h1 {
+  font-size: 14px;
+  margin: 2px 0;
+  text-align: center;
+}
 
-/* line 7, ../sass/partials/_layout.scss */
+/* line 22, ../sass/partials/_layout.scss */
 #global-header {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
-  padding: 10px;
+  padding-top: 10px;
+  height: 24px;
   line-height: 1;
-  background: gray;
+  background: black;
   color: white;
+  border-bottom: 1px solid #ec6fa8;
 }
 
-/* line 17, ../sass/partials/_layout.scss */
+/* line 34, ../sass/partials/_layout.scss */
 #logo {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/common/logo.png?1328946847');
+  background-image: url('../img/common/logo.png?1328957789');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  -moz-background-size: 240px, 94.5px;
+  -webkit-background-size: 240px, 94.5px;
+  -o-background-size: 240px, 94.5px;
+  background-size: 240px, 94.5px;
   width: 240px;
-  height: 100px;
+  height: 94.5px;
   margin: 0 auto;
 }
 
-/* line 24, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 .icon {
+  border: 1px solid gray;
   vertical-align: middle;
 }
-/* line 27, ../sass/partials/_layout.scss */
+/* line 48, ../sass/partials/_layout.scss */
 .icon.normal {
   width: 50px;
   height: 50px;
 }
-/* line 32, ../sass/partials/_layout.scss */
+/* line 53, ../sass/partials/_layout.scss */
 .icon.big {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 
 /* line 4, ../sass/partials/_top.scss */
@@ -247,26 +268,19 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   display: block;
   background: #94144f;
   color: white;
-  border: 1px solid #5d0d32;
+  border: 1px solid #ce3d7f;
   width: 180px;
   padding: 15px 0;
   margin: 15px auto;
 }
 
 /* line 4, ../sass/partials/_president.scss */
-#president-page #profile {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #5d0d32;
+#president-page #profile, #president-page #info-client {
   font-size: 14px;
   padding: 5px;
 }
-/* line 10, ../sass/partials/_president.scss */
-#president-page #profile .name {
+/* line 8, ../sass/partials/_president.scss */
+#president-page #profile .name, #president-page #info-client .name {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -275,19 +289,10 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   margin-left: 10px;
 }
 /* line 7, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#president-page #profile .name {
+#president-page #profile .name, #president-page #info-client .name {
   *display: inline;
 }
-/* line 16, ../sass/partials/_president.scss */
-#president-page #deck {
-  margin-top: 10px;
-  border: 1px solid #5d0d32;
-}
-/* line 20, ../sass/partials/_president.scss */
-#president-page #deck h1 {
-  text-align: center;
-}
-/* line 25, ../sass/partials/_president.scss */
+/* line 18, ../sass/partials/_president.scss */
 #president-page #client-select-button {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -301,7 +306,7 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   display: block;
   background: #94144f;
   color: white;
-  border: 1px solid #5d0d32;
+  border: 1px solid #ce3d7f;
   width: 180px;
   padding: 15px 0;
   margin: 15px auto;

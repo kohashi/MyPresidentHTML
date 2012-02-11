@@ -2,26 +2,47 @@
 
 #main {
   padding: 10px;
+
+  section {
+    @include border-radius(3px);
+    @include background(linear-gradient(lighten($base-bg-color, 25),
+      lighten($base-bg-color, 5)));
+    @include box-shadow(darken($base-bg-color, 15), 1px, 1px, 6px);
+    margin-bottom: 8px;
+    border: 1px solid $base-border-color;
+
+    > h1 {
+      font-size: 14px;
+      margin: 2px 0;
+      text-align: center;
+    }
+  }
 }
 
 #global-header {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
-  padding: 10px;
+  padding-top: 10px;
+  height: 24px;
   line-height: 1;
-  background: gray;
+  background: black;
   color: white;
+  border-bottom: 1px solid lighten($base-bg-color, 35);
 }
 
 #logo {
+  $width: image-width('common/logo.png') / 2;
+  $height: image-height('common/logo.png') / 2;
   @include replace-text('common/logo.png');
-  width: image-width('common/logo.png');
-  height: image-height('common/logo.png');
+  @include background-size($width, $height);
+  width: $width;
+  height: $height;
   margin: 0 auto;
 }
 
 .icon {
+  border: 1px solid gray;
   vertical-align: middle;
 
   &.normal {
@@ -30,8 +51,8 @@
   }
 
   &.big {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 }
 

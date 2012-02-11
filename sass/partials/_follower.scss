@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+$follower-bg-color: white;
+$follower-width: 94px;
+$follower-height: 125px;
+
 .followers {
   text-align: center;
 
@@ -8,23 +12,20 @@
 
     &.blank {
       @include border-radius(10px);
-      padding: 2px;
-      width: 100px;
-      height: 130px;
-      border: 1px solid white;
+      width: $follower-width - 2px;
+      height: $follower-height - 2px;
+      border: 1px solid $follower-bg-color;
     }
   }
 }
 
 .follower {
   @include border-radius(10px);
-  background: white;
+  padding: 6px 0 12px;
+  width: $follower-width;
+  height: $follower-height - 18px;
+  background-color: $follower-bg-color;
   color: black;
-  padding: 2px;
-  width: 100px;
-  height: 130px;
-  border: 1px solid white;
-  font-size: 10px;
   line-height: 1.1;
 
   .icon {
@@ -32,22 +33,11 @@
     margin: 0 auto;
   }
 
-  .name {
-    @include inline-block;
-  }
-
-  table {
-    table-layout: fixed;
-    width: 100%;
-    margin-top: 3px;
-
-    th, td {
-      padding: 1px 0;
-    }
-
-    th {
-      width: 40px;
-    }
+  h1 {
+    max-width: $follower-width;
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;
   }
 }
 
