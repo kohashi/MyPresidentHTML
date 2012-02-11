@@ -1,12 +1,13 @@
 @charset 'utf-8';
 
-@mixin button {
+.button {
   @include border-radius(10px);
+  @include background(linear-gradient($base-bg-color, $base-bg-color));
   text-align: center;
   font-size: 16px;
   text-decoration: none;
   display: block;
-  background: $base-bg-color;
+  background-color: $base-bg-color;
   color: white;
   border: 1px solid $base-border-color;
   width: 180px;
@@ -14,7 +15,7 @@
   margin: 15px auto;
 }
 
-@mixin edit-button {
+.edit-button {
   @include border-top-radius(10px);
   text-decoration: none;
   display: block;

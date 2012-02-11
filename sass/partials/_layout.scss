@@ -4,7 +4,6 @@
   padding: 10px;
 
   section {
-    @include border-radius(3px);
     @include background(linear-gradient(lighten($base-bg-color, 30),
       lighten($base-bg-color, 10)));
     @include box-shadow(darken($base-bg-color, 15), 1px, 1px, 6px);
@@ -16,10 +15,6 @@
       font-size: 14px;
       margin: 3px 0 5px;
       text-align: center;
-    }
-
-    .edit-button {
-      @include edit-button;
     }
   }
 }
