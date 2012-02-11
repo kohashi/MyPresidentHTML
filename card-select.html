@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<style type="text/css">
+
+#dekki {
+		position: absolute;
+		width:90%;
+		height:20%;
+		background-color:#FFE4E1;
+		padding: 10px 10px 10px 10px;
+		margin:10px 0px 0px 0px;
+		text-decoration: none;
+		/* ボタンの角を丸くする*/
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-box-shadow: 0 3px 2px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0 3px 2px rgba(0,0,0,0.6); 
+		-webkit-box-shadow: 0 1em 1em rgba(0,0,0,0.2);
+}
+
+#dekki li{
+	float: left;
+	width: 100px;
+	height:100px;
+	margin: 10px 10px 10px 10px;
+	border: solid black 1px;
+}
+
+
+
+
+#dekki-selects {
+		position: absolute;
+		width:90%;
+		height:60%;
+		background-color:#FFE4E1;
+		padding: 10px 10px 10px 10px;
+		margin:200px 0px 0px 0px;
+		text-decoration: none;
+		/* ボタンの角を丸くする*/
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-box-shadow: 0 3px 2px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0 3px 2px rgba(0,0,0,0.6); 
+		-webkit-box-shadow: 0 1em 1em rgba(0,0,0,0.2);
+		-webkit-animation-duration: 2.5s;
+		-webkit-animation-timing-function: ease-in;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform: rotateX(0);
+		-webkit-animation-name: animation10;
+	}
+	@-webkit-keyframes animation10 {
+	0%{
+	-webkit-box-shadow: 0 1em 1em rgba(0,0,0,0.2);
+	top: 0;
+	}
+	50%{
+	-webkit-box-shadow: 0 1.3em 1.2em rgba(0,0,0,0.15);
+	top: -5px;
+	}
+	100% {
+	-webkit-box-shadow: 0 1em 1em rgba(0,0,0,0.2);
+	top: 0;
+	}
+}
+
+#dekki-selects li {
+	float: left;
+	width: 100px;
+	height:100px;
+	margin: 10px 10px 10px 10px;
+	border: solid black 1px;
+	}
+}
+
+
+</style>
+</head>
+
+<body>
+<div id=dekki>
+	選択されたカード
+	<li>1</li>  
+	<li>2</li>  
+	<li>3</li>  
+</div>
+
+<div id=dekki-selects>
+	カードデッキ選択部分<br>
+	CSSで上下させてます<br>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+@charset 'utf-8';
+
+.followers {
+  text-align: center;
+
+  li {
+    @include inline-block;
+
+    &.blank {
+      @include border-radius(10px);
+      padding: 2px;
+      width: 100px;
+      height: 130px;
+      border: 1px solid white;
+    }
+  }
+}
+
+.follower {
+  @include border-radius(10px);
+  background: white;
+  color: black;
+  padding: 2px;
+  width: 100px;
+  height: 130px;
+  border: 1px solid white;
+  font-size: 10px;
+  line-height: 1.1;
+
+  .icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .name {
+    @include inline-block;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 3px;
+
+    th, td {
+      padding: 1px 0;
+    }
+
+    th {
+      width: 40px;
+    }
+  }
+}
+
+

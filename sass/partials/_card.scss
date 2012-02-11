@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.followers {
+  li {
+    @include inline-block;
+  }
+}
+
+.follower {
+  border: 1px solid white;
+}
+
+

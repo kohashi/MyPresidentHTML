@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+#president-page {
+  #profile {
+    @include border-radius(3px);
+    border: 1px solid $base-border-color;
+    font-size: 14px;
+    padding: 5px;
+
+    .name {
+      @include inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  #deck {
+    margin-top: 10px;
+    border: 1px solid $base-border-color;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  #client-select-button {
+    @include button;
+  }
+}
+
+
