@@ -53,14 +53,16 @@
     <div id="main" role="main">
       <section id="profile">
         <h1 class="subhead">プロフィール</h1>
-        <img class="icon normal" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
-        <p class="name">岩野 尚吾</p>
+        <img class="icon" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
+        <div class="information">
+          <p class="name">岩野 尚吾</p>
+        </div>
       </section>
       <section id="deck">
         <h1>カードデッキ</h1>
-        <ul class="followers">
+        <ul class="follower-cards">
           <li>
-            <article class="follower">
+            <article class="follower-card">
               <img class="icon big" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
               <h1>岩野 尚吾</h1>
             </article>
@@ -68,15 +70,21 @@
           <li class="blank"></li>
           <li class="blank"></li>
         </ul>
-        <a href="http://example.com/">EDIT</a>
+        <a class="edit-button" href="http://example.com/">EDIT</a>
       </section>
-      <section id="info-client">
-        <h1>選択中のキャバ嬢</h1>
-        <img class="icon normal" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" width="50" height="50" />
-        <p class="name">岩野 尚吾</p>
-      </section>
+      <!--
+         - <section id="selected-princess">
+         -   <h1>選択中のお姫様</h1>
+         -   <img class="icon" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" width="50" height="50" />
+         -   <div class="information">
+         -     <p class="name">岩野 尚吾 (ヘブン状態！)</p>
+         -     <p class="score">スコア: 10000</p>
+         -   </div>
+         -   <a class="edit-button" href="http://example.com/">EDIT</a>
+         - </section>
+         -->
       <p>
-        <a id="client-select-button" href="/girl-select.html">キャバ嬢を選択</a>
+        <a id="client-select-button" href="/girl-select.html">お姫様を選択</a>
       </p>
     </div>
     <footer id="global-footer">

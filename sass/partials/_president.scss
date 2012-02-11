@@ -3,16 +3,23 @@
 #president-page {
   #profile {
     font-size: 14px;
-    padding: 5px;
 
-    .name {
+    .icon {
+      margin: 5px;
+    }
+
+    .information {
       @include inline-block;
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
 
-  #info-client {
+  #selected-princess {
     @extend #profile;
+
+    .edit-button {
+      margin-top: 0;
+    }
   }
 
   #client-select-button {
