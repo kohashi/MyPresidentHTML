@@ -42,59 +42,52 @@
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/battle.js"></script>
 </head>
 
-<body id="president-page">
+<body id="battle-page">
 
   <div id="container">
     <header id="global-header">
-      <h1>マイページ</h1>
+      <h1>戦闘開始</h1>
     </header>
     <div id="main" role="main">
-      <section id="profile">
-        <h1 class="subhead">プロフィール</h1>
-        <img class="icon" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
-        <div class="information">
-          <div>
-            <span class="level">レベル: 7</span>
-            <h1 class="name">岩野 尚吾</h1>
-          </div>
-          <p>
-            <span class="power">Power: 300</span>
-            <span class="money">Money: 300</span>
-          </p>
-        </div>
-      </section>
-      <section id="deck">
-        <h1>フォロワー</h1>
+      <div id="battle-status">
+        <span id="score">スコア: <span class="value">100000</span> / </span class="next">100000000</span>
+      </div>
+      <section id="field">
+        <h1 class="subhead">戦闘フィールド</h1>
+        <article id="princess" class="follower-card">
+          <h1>岩野 尚吾</h1>
+          <img class="icon big" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
+        </article>
         <ul class="follower-cards">
           <li>
-            <article class="follower-card">
+            <article id="follower1" class="follower-card">
               <h1>岩野 尚吾</h1>
               <img class="icon big" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
               <p class="power">Power: 100</p>
               <p class="money">Money: 100</p>
             </article>
           </li>
-          <li class="blank"></li>
-          <li class="blank"></li>
+          <li>
+            <article id="follower2" class="follower-card">
+              <h1>岩野 尚吾</h1>
+              <img class="icon big" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
+              <p class="power">Power: 100</p>
+              <p class="money">Money: 100</p>
+            </article>
+          </li>
+          <li>
+            <article id="follower3" class="follower-card">
+              <h1>岩野 尚吾</h1>
+              <img class="icon big" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" />
+              <p class="power">Power: 100</p>
+              <p class="money">Money: 100</p>
+            </article>
+          </li>
         </ul>
-        <a class="edit-button" href="/card-select.html">EDIT</a>
       </section>
-      <!--
-         - <section id="selected-princess">
-         -   <h1>選択中のお姫様</h1>
-         -   <img class="icon" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/276053_100001816136455_377978080_q.jpg" width="50" height="50" />
-         -   <div class="information">
-         -     <p class="name">岩野 尚吾 (ヘブン状態！)</p>
-         -     <p class="score">スコア: 10000</p>
-         -   </div>
-         -   <a class="edit-button" href="http://example.com/">EDIT</a>
-         - </section>
-         -->
-      <p>
-        <a class="button" href="/girl-select.html">お姫様を選択</a>
-      </p>
     </div>
     <footer id="global-footer">
     </footer>
