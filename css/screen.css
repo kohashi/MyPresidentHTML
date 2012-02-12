@@ -495,6 +495,21 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
 }
 
 /* line 6, ../sass/partials/_battle.scss */
+#battle-page #battle-status {
+  text-shadow: 1px 0 0 #94144f, 0 1px 0 #94144f, -1px 0 0 #94144f, 0 -1px 0 #94144f, 1px 1px 0 #94144f, -1px 1px 0 #94144f, 1px -1px 0 #94144f, -1px -1px 0 #94144f;
+  width: 290px;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  margin: 0 auto 5px;
+  padding: 5px 0;
+  text-align: center;
+}
+/* line 16, ../sass/partials/_battle.scss */
+#battle-page #battle-status .value, #battle-page #battle-status .next {
+  letter-spacing: 2px;
+}
+/* line 21, ../sass/partials/_battle.scss */
 #battle-page #field {
   position: relative;
   padding: 10px 0;
@@ -502,26 +517,54 @@ h1.subhead, h2.subhead, h3.subhead, h4.subhead, h5.subhead, h6.subhead {
   height: 270px;
   margin: 0 auto;
 }
-/* line 13, ../sass/partials/_battle.scss */
+/* line 28, ../sass/partials/_battle.scss */
 #battle-page #field .follower-card {
   position: absolute;
 }
-/* line 17, ../sass/partials/_battle.scss */
+/* line 32, ../sass/partials/_battle.scss */
+#battle-page #field #damage-message {
+  text-shadow: 1px 0 0 white, 0 1px 0 white, -1px 0 0 white, 0 -1px 0 white, 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  display: none;
+  top: 15px;
+  left: 130px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #c00;
+  position: absolute;
+  z-index: 1000;
+}
+/* line 45, ../sass/partials/_battle.scss */
 #battle-page #field #princess {
   left: 103px;
 }
-/* line 21, ../sass/partials/_battle.scss */
+/* line 49, ../sass/partials/_battle.scss */
 #battle-page #field #follower1 {
   top: 165px;
   left: 10px;
 }
-/* line 26, ../sass/partials/_battle.scss */
+/* line 54, ../sass/partials/_battle.scss */
 #battle-page #field #follower2 {
   top: 165px;
   left: 103px;
 }
-/* line 31, ../sass/partials/_battle.scss */
+/* line 59, ../sass/partials/_battle.scss */
 #battle-page #field #follower3 {
   top: 165px;
   left: 198px;
+}
+/* line 65, ../sass/partials/_battle.scss */
+#battle-page #user-status {
+  text-shadow: 1px 0 0 #94144f, 0 1px 0 #94144f, -1px 0 0 #94144f, 0 -1px 0 #94144f, 1px 1px 0 #94144f, -1px 1px 0 #94144f, 1px -1px 0 #94144f, -1px -1px 0 #94144f;
+  font-weight: bold;
+  width: 290px;
+  padding: 5px 0;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 14px;
+  line-height: 1.3;
 }

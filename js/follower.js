@@ -4,13 +4,12 @@
     var imgPath = $(this).find('.icon').attr('src');
     var power = $(this).find('.power .value').text();
     var money = $(this).find('.money .value').text();
-    var id = $(this).find('.id').text();
+    var id = $(this).find('.facebook-id').text();
     var input = $('#followers-select-form').find('input[value=""]:first');
 
     if (input.length) {
       input.attr('value', id);
       $('.follower-cards li.blank:first').append('' +
-
             '<article class="follower-card">' +
               '<h1>' + name + '</h1>' +
               '<img class="icon big" src="' + imgPath + '" />' +
@@ -23,6 +22,10 @@
     }
 
     event.preventDefault();
+  });
+
+  $(document).on('click', '.follower-card', function (event) {
+    $(this).parents('li').remove();
   });
 })(jQuery);
 
